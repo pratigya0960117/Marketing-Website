@@ -1,0 +1,194 @@
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header{
+	background: white;
+	box-shadow: 0 5px 8px 2px rgba(0,0,0,.2);
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+
+	position: relative;
+}
+
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #b05e2a;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+.loginbox{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.loginbox h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 750;
+}
+
+.loginbox input[type="text"],.loginbox input[type="password"]{
+	font-family: 'Candara', sans-serif;
+	font-size: 16px;
+	border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.loginbox input[type="text"]:focus,.loginbox input[type="password"]:focus{
+	width: 280px;
+	border-color: #2ecc71;
+}
+
+.loginbox input[type="button"]{
+	font-family: 'Candara', sans-serif;
+	font-size: 16px;
+	border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: #444;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+	width: 170px;
+
+}
+
+.loginbox input[type="button"]:hover{
+	background: #2ecc71;
+ 	color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; 
+}
+
+.loginbox input[class="button"] {
+  color: white;
+}
+
+
+.bgphoto{
+	margin-bottom: -2%;
+}
+
+.copyright{
+	background: black;
+	color: white;
+	height: 140px;
+}
+
+.copyright p[class="about"]{
+	padding-left: 20%;
+	padding-top: 10%;
+}
+
+.copyright p[class="tnc"]{
+	padding-left: 70%;
+}
+
+copbot ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+copbot li{
+	display: inline-block;
+	margin-left: 270px;
+	padding-top: 40px;
+	position: relative;
+}
+
+.copyright p[class="coptext"]{
+	padding-top: 2%;
+	padding-left: 41%;
+	font-family: 'Candara', sans-serif;
+}
+
+copbot a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+copbot a:hover {
+	color: white;
+}
